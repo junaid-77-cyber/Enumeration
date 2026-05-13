@@ -65,6 +65,8 @@ Top level domain expansion
 ## OUTPUT:
 ![alt text](<Screenshot 2026-04-30 081421.png>)
 
+The command dnsrecon -d is used to perform DNS reconnaissance on a target domain. It gathers information such as DNS records, subdomains, zone transfers, and name servers to help identify the network structure of a website or organization during security assessments.
+
 ## dnsenum
 Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
 
@@ -82,6 +84,8 @@ This program is useful for pentesters, ethical hackers and forensics experts. It
 ## OUTPUT:
 ![alt text](<Screenshot 2026-04-30 081430.png>)
 
+Dnsenum is a DNS enumeration tool used to collect information about domains, including DNS records, subdomains, mail servers, and name servers. It can also attempt zone transfers and Google scraping to discover additional hosts related to the target domain.
+
 ## smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
 
@@ -92,6 +96,8 @@ select any username in the first column of the above file and check the same
 ## OUTPUT
 ![alt text](<Screenshot 2026-04-30 081534.png>)
 
+smtp-user-enum is a command-line tool used to identify valid usernames on an SMTP mail server. It works by testing usernames through SMTP authentication methods such as VRFY, EXPN, or RCPT commands, helping security testers evaluate mail server configurations.
+
 ## Telnet for smtp enumeration
 Telnet allows to connect to remote host based on the port no. For smtp port no is 25
 telnet <host address> 25 to connect
@@ -100,11 +106,15 @@ and issue appropriate commands
 ## Output
 ![alt text](<Screenshot 2026-04-30 081559.png>)
 
+Telnet is a network protocol and command-line utility used to establish remote connections to systems over TCP/IP networks. It allows users to communicate with remote servers, test open ports, and troubleshoot network services, although it is considered insecure because data is transmitted without encryption.
+
 ## nmap –script smtp-enum-users.nse <hostname>
 The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server by issuing the VRFY, EXPN or RCPT TO commands. The goal of this script is to discover all the user accounts in the remote system.
 
 ## OUTPUT:
 ![alt text](<Screenshot 2026-04-30 081647.png>)
+
+The command nmap --script is used to run scripts from the Nmap Scripting Engine (NSE). These scripts automate tasks such as vulnerability detection, service enumeration, malware detection, and network discovery, making Nmap more powerful for penetration testing and security analysis.
 
 ## RESULT:
 The Google hacking keywords and enumeration tools were identified and executed successfully
